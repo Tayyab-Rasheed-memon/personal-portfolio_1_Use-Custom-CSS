@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <header class="bg-gray-800 text-white py-4">
+        <nav class="flex justify-center space-x-8">
+            <a href="index.html" class="hover:text-gray-300">Home</a>
+            <a href="about.html" class="hover:text-gray-300">About</a>
+            <a href="contact.html" class="hover:text-gray-300">Contact</a>
+        </nav>
+    </header>
+    
+    <main class="max-w-3xl mx-auto p-6">
+        <section class="my-12">
+            <h1 class="text-4xl font-bold">Contact Me</h1>
+            <p class="mt-6">Feel free to reach out via email or follow me on my social media channels.</p>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="mt-8 space-y-4">
+                <div>
+                    <label for="name" class="block text-lg font-semibold">Your Name:</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-semibold"> Your Email  :</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md">
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-semibold">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gray-800 text-white py-2 rounded-md font-bold hover:bg-gray-700">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
